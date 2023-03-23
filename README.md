@@ -1,3 +1,8 @@
+# Forked-FindYara
+
+- Allows .yar* files
+- Added also function of matched address
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/5906222/133688671-d830f2e2-b8d4-4238-a5dd-02808984ae36.gif">
 </p>
