@@ -15,6 +15,7 @@ import idaapi
 import idautils
 
 import yara
+import string
 import operator
 
 __AUTHOR__ = '@herrcore'
@@ -193,7 +194,7 @@ class YaraSearch(object):
             @return: bool
             """
             try:
-                return data.decode(tp).isalnum()
+                return all([i in string.printable for i in data.decode(tp)])
             except UnicodeDecodeError:
                 pass
             return False
